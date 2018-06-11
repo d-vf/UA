@@ -1,0 +1,13 @@
+name: Urban Analytics
+navbar:
+  title: Urban Analytics
+  left:
+  - text: Urban
+    href: urbanintro.html
+  - text: Data
+    href: data.html
+output_dir: '.'
+output:
+  html_document:
+    lib_dir: site_libs
+    self_contained: yes

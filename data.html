@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.0/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.4/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Urban Analytics</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="urbanintro.html">Urban</a>
+</li>
+<li>
+  <a href="data.html">Data</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><br />
+</p>
+<div id="data" class="section level2">
+<h2>Data</h2>
+<p><br />
+</p>
+<div class="figure">
+<img src="dataimage.png" />
+
+</div>
+<p><br />
+</p>
+</div>
+<div id="open-data" class="section level2">
+<h2>Open Data</h2>
+<p><br />
+</p>
+<div id="general-definition" class="section level3">
+<h3>General Definition</h3>
+<p><em>“Open data is data that can be freely used, shared and built-on by anyone, anywhere, for any purpose”</em></p>
+<p>Source: <a href="https://opendefinition.org/od/2.0/en/" class="uri">https://opendefinition.org/od/2.0/en/</a></p>
+<p><br />
+</p>
+</div>
+<div id="honorable-examples" class="section level3">
+<h3>Honorable Examples</h3>
+<p><a href="https://data.london.gov.uk/">London Data store</a> | <a href="https://data.cityofnewyork.us">NYC Open Data</a></p>
+<p><br />
+</p>
+</div>
+</div>
+<div id="other-sources" class="section level2">
+<h2>Other Sources</h2>
+<div id="htmlwidget-c31b4073237195950798" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c31b4073237195950798">{"x":{"filter":"none","data":[["<a href=\"https://opendatainception.io\">Open Data Inception<\/a>","<a href=\"https://www.opendatanetwork.com/\">Open Data Network<\/a>","<a href=\"http://dadosabertos.cm-porto.pt/dataset\">Open data Porto<\/a>","<a href=\"https://data.gov.in/opendatasites\">Open data Sites<\/a>","<a href=\"http://dati.trentino.it\">Open Data Trentino<\/a>","<a href=\"https://wiki.openstreetmap.org/wiki/Main_Page\">Open Street Map<\/a>","<a href=\"http://www.ordnancesurvey.co.uk/business-and-government/products/opendata-products.html\">OS open data<\/a>","<a href=\"https://www.opendataportal.at/\">Open Data Portal Austria<\/a>","<a href=\"http://data.vancouver.ca\">Vancover<\/a>","<a href=\"https://data.gov.uk/\">UK Open data<\/a>","<a href=\"http://data.wien.gv.at/\">Wien Data<\/a>","<a href=\"http://data.sfgov.org\">San Francisco City<\/a>","<a href=\"http://data.austintexas.gov\">Austin Texas<\/a>","<a href=\"http://daten.berlin.de/\">Berlin data<\/a>","<a href=\"http://data.gov.bc.ca\">British Columbia<\/a>","<a href=\"http://us-cities.survey.okfn.org/\">U.S. City Open Data Census<\/a>","<a href=\"https://www.data.gov/\">U.S. Government’s open data<\/a>","<a href=\"https://data.london.gov.uk/\">London Open data<\/a>","<a href=\"https://data.delaware.gov/\">Delaware<\/a>","<a href=\"https://dev.socrata.com/foundry/data.cityofnewyork.us/rvhx-8trz\">Data City framework<\/a>","<a href=\"data.gov.in\">Data Gov India<\/a>","<a href=\"https://data.gov.ie/\">Ireland s Open Data Portal<\/a>","<a href=\"http://us-city.census.okfn.org/\">US City Census<\/a>","<a href=\"http://pt-cities.survey.okfn.org/\">Portugal Open Data Census<\/a>","<a href=\"https://data.nasa.gov/\">NASA data<\/a>","<a href=\"https://data.cityofnewyork.us/\">New York City<\/a>","<a href=\"http://www.google.com/publicdata/directory\">Google public data repository<\/a>","<a href=\"http://hub.arcgis.com/datasets\">arcgis open data<\/a>","<a href=\"http://opendata.cern.ch/docs/about-atlas\">Atlas<\/a>","<a href=\"http://www.dati.gov.it\">Italian PA Data<\/a>","<a href=\"http://dados.cm-lisboa.pt/\">Dados Lisboa<\/a>","<a href=\"https://data.ca.gov/\">California<\/a>","<a href=\"https://data.cambridgema.gov/browse\">Cambridge open data<\/a>","<a href=\"http://opendata.cern.ch/docs/about-atlas\">CERN<\/a>","<a href=\"http://data.cityofchicago.org\">Chicago<\/a>","<a href=\"https://www.wikidata.org/wiki/Wikidata:Main_Page\">Wikidata:Data access<\/a>","<a href=\"http://data.seattle.gov\">Seatle<\/a>","<a href=\"<a href=\"http://www.dados.gov.pt/pt/catalogodados/catalogodados.aspx#sthash.2KrHu9mP.dpbs\">Dados Gov PT<\/a>","<a href=\"<a href=\"http://www.datakc.org\">King County Open Data<\/a>"],["NA","yes","no","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","NA","yes","yes","NA","NA","yes","no","yes","NA","yes","yes","yes","yes","NA","yes","yes","yes","yes","yes"],["NA","yes","no","yes","no","yes","NA","NA","NA","yes","NA","NA","no","NA","yes","NA","yes","yes","NA","NA","NA","yes","NA","NA","NA","yes","NA","yes","NA","NA","no","NA","NA","NA","yes","NA","yes","yes","no"],["worldwide","national","city","NA","city","worldwide","UK","city","city","national","city","city","city","city","district","city","national","city","State","city","national","national","national","national","worldwide","city","NA","worldwide","NA","national","city","state","city","NA","city","NA","city","national","city"],["worldwide","US","porto","NA","Trentino","worldwide","UK","Austria","vancouver","UK","Wien","San Francisco","Austin","Berlin","British Columbia","US","US","London","Delaware","New York","India","Ireland","US","Portugal","US","NYC","NA","US","NA","Italy","Lisbon","California","Cambridge","NA","Chicago","NA","Seatle","Portugal","King County"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th><em>Name<\/em><\/th>\n      <th><em>Ready to use formats?<\/em><\/th>\n      <th><em>Bulk download?<\/em><\/th>\n      <th><em>Length<em><\/th>\n      <th><em>Local<em><\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
