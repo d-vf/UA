@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.0/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.4/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Urban Analytics</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="urbanintro.html">Urban</a>
+</li>
+<li>
+  <a href="data.html">Data</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><br />
+</p>
+<div id="data" class="section level2">
+<h2>Data</h2>
+<p><br />
+</p>
+<div class="figure">
+<img src="dataimage.png" />
+
+</div>
+<p><br />
+</p>
+</div>
+<div id="open-data" class="section level2">
+<h2>Open Data</h2>
+<p><br />
+</p>
+<div id="general-definition" class="section level3">
+<h3>General Definition</h3>
+<p><em>“Open data is data that can be freely used, shared and built-on by anyone, anywhere, for any purpose”</em></p>
+<p>Source: <a href="https://opendefinition.org/od/2.0/en/" class="uri">https://opendefinition.org/od/2.0/en/</a></p>
+<p><br />
+</p>
+</div>
+<div id="honorable-examples" class="section level3">
+<h3>Honorable Examples</h3>
+<p><a href="https://data.london.gov.uk/">London Data store</a> | <a href="https://data.cityofnewyork.us">NYC Open Data</a></p>
+<p><br />
+</p>
+</div>
+<div id="open-data-portals-city-or-national-level" class="section level3">
+<h3>Open Data Portals (city or national level)</h3>
+<p><br />
+</p>
+<p>Most covered subjects:</p>
+<ul>
+<li>Art and Culture;</li>
+<li>Business and Economy</li>
+<li>Crime and Community Safety</li>
+<li>Demographics</li>
+<li>Education</li>
+<li>Employment and Skills</li>
+<li>Environment</li>
+<li>Health</li>
+<li>Housing</li>
+<li>Income, Poverty and Welfare</li>
+<li>Planning</li>
+<li>Sport</li>
+<li>Transparency</li>
+<li>Transport</li>
+<li>Young People (…)</li>
+</ul>
+<p><br />
+</p>
+<div id="htmlwidget-e5c03b31b516ab9819b9" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e5c03b31b516ab9819b9">{"x":{"filter":"none","data":[["<a href=\"https://opendatainception.io\">Open Data Inception<\/a>","<a href=\"https://www.opendatanetwork.com/\">Open Data Network<\/a>","<a href=\"http://dadosabertos.cm-porto.pt/dataset\">Open data Porto<\/a>","<a href=\"https://data.gov.in/opendatasites\">Open data Sites<\/a>","<a href=\"http://dati.trentino.it\">Open Data Trentino<\/a>","<a href=\"https://wiki.openstreetmap.org/wiki/Main_Page\">Open Street Map<\/a>","<a href=\"http://www.ordnancesurvey.co.uk/business-and-government/products/opendata-products.html\">OS open data<\/a>","<a href=\"https://www.opendataportal.at/\">Open Data Portal Austria<\/a>","<a href=\"http://data.vancouver.ca\">Vancover<\/a>","<a href=\"https://data.gov.uk/\">UK Open data<\/a>","<a href=\"http://data.wien.gv.at/\">Wien Data<\/a>","<a href=\"http://data.sfgov.org\">San Francisco City<\/a>","<a href=\"http://data.austintexas.gov\">Austin Texas<\/a>","<a href=\"http://daten.berlin.de/\">Berlin data<\/a>","<a href=\"http://data.gov.bc.ca\">British Columbia<\/a>","<a href=\"http://us-cities.survey.okfn.org/\">U.S. City Open Data Census<\/a>","<a href=\"https://www.data.gov/\">U.S. Government’s open data<\/a>","<a href=\"https://data.london.gov.uk/\">London Open data<\/a>","<a href=\"https://data.delaware.gov/\">Delaware<\/a>","<a href=\"https://dev.socrata.com/foundry/data.cityofnewyork.us/rvhx-8trz\">Data City framework<\/a>","<a href=\"data.gov.in\">Data Gov India<\/a>","<a href=\"https://data.gov.ie/\">Ireland s Open Data Portal<\/a>","<a href=\"http://us-city.census.okfn.org/\">US City Census<\/a>","<a href=\"http://pt-cities.survey.okfn.org/\">Portugal Open Data Census<\/a>","<a href=\"https://data.nasa.gov/\">NASA data<\/a>","<a href=\"https://data.cityofnewyork.us/\">New York City<\/a>","<a href=\"http://www.google.com/publicdata/directory\">Google public data repository<\/a>","<a href=\"http://hub.arcgis.com/datasets\">arcgis open data<\/a>","<a href=\"http://opendata.cern.ch/docs/about-atlas\">Atlas<\/a>","<a href=\"http://www.dati.gov.it\">Italian PA Data<\/a>","<a href=\"http://dados.cm-lisboa.pt/\">Dados Lisboa<\/a>","<a href=\"https://data.ca.gov/\">California<\/a>","<a href=\"https://data.cambridgema.gov/browse\">Cambridge open data<\/a>","<a href=\"http://opendata.cern.ch/docs/about-atlas\">CERN<\/a>","<a href=\"http://data.cityofchicago.org\">Chicago<\/a>","<a href=\"https://www.wikidata.org/wiki/Wikidata:Main_Page\">Wikidata:Data access<\/a>","<a href=\"http://data.seattle.gov\">Seatle<\/a>","<a href=\"<a href=\"http://www.dados.gov.pt/pt/catalogodados/catalogodados.aspx#sthash.2KrHu9mP.dpbs\">Dados Gov PT<\/a>","<a href=\"<a href=\"http://www.datakc.org\">King County Open Data<\/a>"],["NA","yes","no","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","yes","NA","yes","yes","NA","NA","yes","no","yes","NA","yes","yes","yes","yes","NA","yes","yes","yes","yes","yes"],["NA","yes","no","yes","no","yes","NA","NA","NA","yes","NA","NA","no","NA","yes","NA","yes","yes","NA","NA","NA","yes","NA","NA","NA","yes","NA","yes","NA","NA","no","NA","NA","NA","yes","NA","yes","yes","no"],["worldwide","national","city","NA","city","worldwide","UK","city","city","national","city","city","city","city","district","city","national","city","State","city","national","national","national","national","worldwide","city","NA","worldwide","NA","national","city","state","city","NA","city","NA","city","national","city"],["worldwide","US","porto","NA","Trentino","worldwide","UK","Austria","vancouver","UK","Wien","San Francisco","Austin","Berlin","British Columbia","US","US","London","Delaware","New York","India","Ireland","US","Portugal","US","NYC","NA","US","NA","Italy","Lisbon","California","Cambridge","NA","Chicago","NA","Seatle","Portugal","King County"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th><em>Name<\/em><\/th>\n      <th><em>Ready to use formats?<\/em><\/th>\n      <th><em>Bulk download?<\/em><\/th>\n      <th><em>Length<em><\/th>\n      <th><em>Local<em><\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p><br />
+</p>
+</div>
+<div id="other-per-subject" class="section level3">
+<h3>Other (per subject)</h3>
+<p><br />
+</p>
+<div id="htmlwidget-47f37db9a4b1536f17ec" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-47f37db9a4b1536f17ec">{"x":{"filter":"none","data":[["<a href=\"http://www.addp.pt/consumos.php?ref=vngaia\">ADDP (consumption)<\/a>","<a href=\"http://qualar.apambiente.pt/qualar/index.php\">APA<\/a>","<a href=\"http://snirh.apambiente.pt/\">APA snirh<\/a>","<a href=\"http://www.bportugal.pt/EstatisticasWeb/(S(dedz5g55rtbatbqefbnf3s55))/Default.aspx\">Banco de Portugal<\/a>","<a href=\"http://opendata.bnportugal.pt/\">BNP<\/a>","<a href=\"https://developer.companieshouse.gov.uk/api/docs/\">Companies House<\/a>","<a href=\"https://ec.europa.eu/info/policies/consumers/consumer-protection/evidence-based-consumer-policy_en\">Consumer scoreboards<\/a>","<a href=\"http://crawdad.org/\">CRAWDAD<\/a>","<a href=\"http://www.crunchbase.com/\">Crunchbase<\/a>","<a href=\"http://www.dartmouthatlas.org/\">Dartmouth Atlas Project<\/a>","<a href=\"https://datausa.io/\">Data USA<\/a>","<a href=\"http://dataviva.info/en/\">Data Viva<\/a>","<a href=\"http://datacite.org\">Datacite<\/a>","<a href=\"https://pslcdatashop.web.cmu.edu/\">DataShop<\/a>","<a href=\"http://mapas.dgterritorio.pt/geoportal/catalogo.html\">DG Território<\/a>","<a href=\"http://www.dgterritorio.pt/sistemas_de_informacao/snit/o_que_e_o_snit_/servicos_web/\">DG Território (SNIT)<\/a>","<a href=\"http://www.dgeg.gov.pt/\">DGEG/MAOTE<\/a>","<a href=\"http://www.dgterritorio.pt/sistemas_de_informacao/\">Direção-Geral do Território<\/a>","<a href=\"http://www.dgo.pt/Paginas/default.aspx\">Direcção Geral do Orçamento<\/a>","<a href=\"http://www.dgo.pt/Paginas/default.aspx\">Direcção Geral de Saude<\/a>","<a href=\"https://www.eros.usgs.gov/\">Earth Resources Observation and Science EROS Center<\/a>","<a href=\"http://www.edp-distribuicao.com/dados-energia/\">EDP Distribuição<\/a>","<a href=\"http://www.edp-distribuicao-rede.wntech.com/\">EDP Distribuição<\/a>","<a href=\"https://openei.org/wiki/Main_Page\">Energy Information and Data | OpenEI.org<\/a>","<a href=\"https://ec.europa.eu/energy/en/data-analysis/energy-modelling\">Energy Union (Energy modelling)<\/a>","<a href=\"http://www.epal.pt/EPAL/menu/%C3%A1gua/sistema-de-abastecimento/origens-de-%C3%A1gua\">EPAL<\/a>","<a href=\"\"http://www.ersar.pt/pt/setor/entidades-gestoras\">ERSAR (entities)<\/a>","<a href=\"http://www.ersar.pt/pt/setor/caracterizacao/abastecimento-de-agua\">ERSAR (water supply)<\/a>","<a href=\"http://www.esri.com/software/arcgis/arcgisonline/arcgis-open-data\">ERSI<\/a>","<a href=\"https://earth.esa.int/web/guest/home\">ESA Earth Online data<\/a>","<a href=\"https://ec.europa.eu/energy/en/eu-buildings-database\">EU Buildings Database<\/a>","<a href=\"http://www.eea.europa.eu/data-and-maps\">European Environment Agency (EEA)<\/a>","<a href=\"http://semantic.eea.europa.eu/\">European Environment Agency (EEA)<\/a>","<a href=\"https://data.europa.eu/euodp/en/home\">European Union Open Data Portal<\/a>","<a href=\"http://ec.europa.eu/eurostat/web/energy/data/main-tables\">Eurostat<\/a>","<a href=\"http://ec.europa.eu/eurostat/web/energy/data/main-tables\">Eurostat (Energy)<\/a>","<a href=\"http://www.faa.gov/data_research/\">Federal Aviation Administration - FAA<\/a>","<a href=\"http://www.factual.com/\">Factual<\/a>","<a href=\"http://www.globalstat.eu/en/\">GlobalStat<\/a>","<a href=\"http://www.dgs.pt/dashboard/\">Heath dashboard (PT)<\/a>","<a href=\"http://www.icpsr.umich.edu/icpsrweb/CPES/\">ICPSR - University of Michigan<\/a>","<a href=\"http://www.igeo.pt/DadosAbertos/Listagem.aspx\">IGEO<\/a>","<a href=\"http://www.imtt.pt/sites/IMTT/Portugues/Observatorio/Estatisticas/Paginas/Estatisticas.aspx\">IMTT<\/a>","<a href=\"https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0009494&contexto=bd&selTab=tab2\">INE<\/a>","<a href=\"https://www.iea.org/statistics/statisticssearch/\">International Energy Agency<\/a>","<a href=\"https://www.ipma.pt/en/\">IPMA<\/a>","<a href=\"http://rechercheisidore.fr\">ISIDORE<\/a>","<a href=\"http://build.kiva.org/\">Kiva<\/a>","<a href=\"http://knoema.com\">knoem<\/a>","<a href=\"http://www.solarpowereurope.org/live-map/\">Live Map: SolarPower Europe<\/a>","<a href=\"http://data.medicare.gov\">Medicare<\/a>","<a href=\"http://medihal.archives-ouvertes.fr\">MédiHAL<\/a>","<a href=\"http://mdgs.un.org/unsd/mdg/Data.aspx\">Millenium Goals<\/a>","<a href=\"http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\">National Archieves<\/a>","<a href=\"http://www.ngdc.noaa.gov/ngdc.html\">National Centers for Environmental Information<\/a>","<a href=\"http://stats.oecd.org/\">OECD<\/a>","<a href=\"http://www.omie.es/files/flash/ResultadosMercado.swf\">OMIE - Energy spot prices<\/a>","<a href=\"https://www.pordata.pt/SubThemesMicros.aspx?DatabaseName=Municipios&SubThemeName=Energia&SubThemeId=195&\">Pordata<\/a>","<a href=\"http://portaldoclima.pt/thredds/catalog/ipmadt/hm/catalog.html?dataset=ipmadataset/hm/PT100-hm19712000-aaa-avgr-taavgr-en-en.nc\">Portal do clima<\/a>","<a href=\"http://quandl.com\">quandl<\/a>","<a href=\"https://www.re3data.org/\">re3data<\/a>","<a href=\"http://data.reeep.org/\">reeep<\/a>","<a href=\"http://www.centrodeinformacao.ren.pt/PT/InformacaoExploracao/Paginas/EstatisticaMensal.aspx\">REN<\/a>","<a href=\"http://www.mercado.ren.pt/PT/Electr/InfoMercado/Prod/Paginas/Verificada.aspx\">REN(energy market)<\/a>","<a href=\"https://www.ise.fraunhofer.de/en/renewable-energy-data.html\">Renewable Energy Data - Fraunhofer ISE<\/a>","<a href=\"https://www.sce.pt/estatisticas/\">SCE<\/a>","<a href=\"http://sgcie.publico.adene.pt/LinksUteis/Paginas/default.aspx\">SGCIE<\/a>","<a href=\"http://snig.dgterritorio.pt/portal/\">SNIG<\/a>","<a href=\"https://dev.socrata.com/data/\">Socrata<\/a>","<a href=\"http://research.stlouisfed.org/fred2/\">St. Louis Fed Reserve<\/a>","<a href=\"http://snap.stanford.edu/data/index.html\">Stanford Large Network Dataset Collection<\/a>","<a href=\"http://data.torontopolice.on.ca/pages/open-data\">Toronto police<\/a>","<a href=\"http://comtrade.un.org/\">UN Comtrade<\/a>","<a href=\"http://data.un.org/Explorer.aspx\">UN Data<\/a>","<a href=\"http://www.bls.gov/\">US Department of Labour<\/a>","<a href=\"http://data.worldbank.org/developers\">World Bank<\/a>","<a href=\"http://econ.worldbank.org/datasets\">World Bank<\/a>","<a href=\"https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp?pn=1\">Bureau of Transportation Statistics<\/a>","<a href=\"https://www.federalreserve.gov/data.htm\">FED<\/a>"],["Aguas de Douro e Paiva, Water Use, Local level","Enviromental data, Air Quality","Hydric Ressources (PT) https://snirh.apambiente.pt/index.php?idMain=2&idItem=1 ","Macro Economics and Banking (debt, equity, etc)","National libraries achieves metadata","UK Companies House ","Consumer scoreboards (europe)","A Community Resource for Archiving Wireless Data At Dartmouth","startups data","For more than 20 years, the Dartmouth Atlas Project has documented glaring variations in how medical resources are distributed and used in the United States.","US datasets and data viz","Brazil datasets and data viz","DataCite is a leading global non-profit organisation that provides persistent identifiers for research data. Our goal is to help the research community locate, identify, and cite research data with confidence.","interaction data in learning environments","land catalogue","Information system web services","Statistical data reported which gives the Energy Mix and CO2 emissions per Energy provider","geo portugal","Public Accounting Data","Health, POPULAÇÃO, NATALIDADE, MORTALIDADE, 2013 2014 2015 2016 2017","Earth Resources Observation and Science Center","DSO data, energy","DSO Data, lines, substations, profiles","There are currently more than 198,764 pages on OpenEI, those pages contain a wide variety of topics from renewable energy, to policy regulations, to analyzed data and raw data","Energy, Europe","Water use, local level","Water distribution regulator","Water distribution regulator","ArCGIS Open data","european space agency data, 178 datasets","EU Buildings Database","data and maps enviroment","European Environment Agency","European data portals","European official statistics","Agrregated energy stats","Aviation, reports","location data company","GlobalStat takes up this need for publicly available information on developments in a globalised world.","UN ComTrade (trade, ressources)","Collaborative Psychiatric Epidemiology Surveys,A collection of three national surveys focused on each of the major ethnic groups to study psychiatric illnesses and health services use","land, territory","Transportation","National Statistics Portugal","International Energy Agency","weather data","Digital data of Humanities and Social Sciences","Kiva microfinance platform","World and regional statistics, national data, maps, rankings","live solar map, europe","Medicare Healthcare,insurance data","MédiHAL est une archive ouverte qui permet de déposer des données visuelles et sonores (images fixes, vidéos et sons), produites dans le cadre de la recherche scientifique.","Millenium Goals Indicators","National Archieves","NOAA National Centers for Environmental Information is responsible for preserving, monitoring, assessing, and providing public access to the Nations treasure of geophysical data and information","economic and development data","Energy market data","Municipalities database analysed in 660 indicators divided into 14 themes","Climate data","financial, economic, and alternative datasets","2,000 Data Repositories and Science ","Clean Energy Datasets","TSO data, Energy grid manager reports also the total, per source, energy produced","market energy data","renewable energy data, germany","Estatísticas gerais da certificação energética dos edifícios disponíveis para consulta","Consumos Intensivos de Energia, Registo","Sistema Nacional de Informação Geográfica SNIG","Socrata data platform hosts tens of thousands of government datasets","Download, graph, and track 508 000 US and international time series from 85 sources","Networks and graphs","Toronto police, Crime statistics and maps on this site are updated by the Business Intelligence Analytics Unit","100 requests per hour per IP address or authenticated user","UN data","US Department of Labour","World economics, Development data","World economics, Development data","U.S. Department of Transportation","Economics, Banking System"],["Douro, water","pollutants","Hydro","banking","libraries","Search, Company profile, Document API","consumer, goods","Wireless Data","Companies, People, Investors, Funding, Rounds, Acquisitions, Schools, Events","medical data","US data","Brazil, data","Repo","learning data","Land, Territory, Geo","Land, Territory, Geo","energy, geology, ressources, portugal","Land, Territory, Geo","treasury, public finance","Health Care","earth sciences","Energy, distribution","Energy, distribution","Energy","Energy, Europe","Lisbon, Water, Distribution","Water, Regulation","Water, Regulation","Maps","Space, Satellite","Buildings","Maps, Environment","Environment","Open Data, repository, Europe","Statistics, Europe","european, energy, indicators","aviation, traffic, transportation, Accident Incident Data, Aviation Data Statistics, Aviation Forecasts, Commercial Space Data, Funding Grant Data, Passengers Cargo, Research, Safety","Location Data ","GlobalStat takes up this need for publicly available information on developments in a globalised world.","trade, global","Social Research","land, territory, geo","transportation","several","energy, IEA, global","weather, climate","Digital data, Humanities,Social","micro-finance","statistics","solar, energy","health care","visual and sound","UN, development","National Archieves","geophysical data","development, economics","Energy, market","General indicators, mainly from governmental agencies, Open datasets which have datasets on energy consumption, per consumer, per city, annual base","climate","finance","science","energy, data","Energy grid manager reports also the total, per source, energy produced","energy, markets","energy","EPC Buildings","energy","trade, economics","Government datasets","banking","Networks and graphs","Reported Crime, Traffic, Boundary Files, Budget","annual trade statistics starting from 1962 and monthly trade statistics since 2010","Crime, Education, Energy, Environment, Finance,Food and Agriculture, Gender, Health Human development, Indicator database, Industry, Information and Communication Technology, Labour,National accounts, Official Development Assistance, Population, Refugees, Tourism, Trade","Labour, US","economics, development","economics, development","Transportation, US","Economics, Banking System"],["xls","xls","csv","xls, csv","  ","API","  ","  ","api, xls","  ","  ","  ","  ","  ","  ","  ","  ","  ","xls","xls","  ","xls","xls","  ","  ","  ","xls","  ","  ","  ","  ","xls, maps, graphs","xls, maps, graphs","  ","xls, csv","  ","  ","  ","pdf, xls","xls","  ","  ","pdf","xls, csv","xls","xls","  ","  ","  ","  ","  ","  ","  ","  ","  ","xls, csv, xml","xls","PDF, XLS","  ","api, several","repo","As Linked Open Data, Via the public SPARQL endpoint","xls","  ","  ","none","  ","API, data stream (needs registration)","  ","  ","  ","kml shapefile, excel, api","JSON, CSV","API, Structured XML, Value separated by a comma, Semicolon, Pipe","  ","csv, xls, json, xml","  ","csv","  "],["yes","yes","yes","needs registation (free)"," ","yes","no","  ","yes","  ","  ","  ","  ","  ","  ","  ","  ","  ","yes","yes","  ","  ","no","  ","  ","no","yes","no","yes","yes","no","yes","yes","  ","yes","yes","  ","  ","yes","yes","  ","  ","no","yes","yes","yes","  ","  ","  ","no","  ","  ","  ","  ","  ","yes","yes","yes","  ","yes","  ","yes","yes","  ","  ","no","  ","yes","  ","  ","  ","yes","yes","yes","  ","yes","yes","yes","  "],["no","no","no","yes","  ","yes","no","  ","no","  ","  ","  ","  ","  ","  ","  ","no","  ","no","  ","  ","  ","no","  ","  ","no","no","no","yes","  ","no","yes","yes","  ","yes","yes","no","  ","yes","yes","  ","  ","no","yes","yes","no","  ","  ","  ","no","  ","  ","  ","  ","  ","yes","  ","no","  ","yes","  ","yes","no","  ","  ","no","  ","yes","  ","  ","  ","yes","yes","yes","  ","yes","yes","no","  "],["district","national","national","national","national","national","European","national","regional","national","national","national","NA","NA","national","national","national,city ","national","national","national","Wordlwide","national","nationa,distrcit and council level","Wordwide","Europe, agreggated national","until city level, distribution points","national","national","Wordlwide","Europe","Europe","Europe","Europe","Europe","Europe","Europe","national","Wordlwide","National, european","national","national","national","national","national","Wordlwide","national","national","Wordlwide","Wordlwide","Europe","national","national","Wordlwide","national","national","national","national","European, National and local","national","NA","NA","NA","national","national","national","district","national","national","Wordlwide","state","NA","city","worldwide","worldwide","national","worldwide","worldwide","national","national"],["Portugal","district","Portugal","Portugal","Portugal","UK","Europe","US","Wordlwide","US","US","Brazil","NA","NA","Portugal","Portugal","Portugal","Portugal","Portugal","Portugal","US","Portugal","Portugal","Wordwide","Europe","Portugal","Portugal","Portugal","Wordlwide","Europe","Europe","Europe","Europe","Europe","Europe","Europe","US","Wordlwide","Europe","Portugal","US","Portugal","Portugal","Portugal","Wordlwide","Portugal","France","Wordlwide","Wordlwide","Europe","US","France","Wordlwide","UK","US","OECD","Iberia","Portugal","Portugal","NA","NA","NA","Portugal","Portugal","Germany","Portugal","Portugal","Portugal","Wordlwide","US","NA","Canada","worldwide","worldwide","US","worldwide","worldwide","US","US"],["  ","  ","Attribution","  ","  ","<a href=\"http://resources.companieshouse.gov.uk/serviceInformation.shtml\">T&C<\/a>","  ","  ","<a href=\"https://about.crunchbase.com/terms-of-service/\">T&C<\/a>","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","<a href=\"http://www.globalstat.eu/en/GlobalStat/Terms+and+Conditions+of+Use\">T&C<\/a>","  ","  ","  ","  ","  ","<a href=\"https://www.iea.org/t&c/\">T&C<\/a>","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","No mention of usage terms","  ","  ","  ","Open Government Data License","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","<a href=\"http://data.un.org/Host.aspx?Content=UNdataUse\">T&C<\/a>","  ","  ","  ","  ","  "],["public","public","public","public","public","public","public","private","private","NA","private","private","private","private","public","public","public","public","public","public","public","NA","NA","NA","public","public","public","public","public","public","public","public","public","public","public","public","public","private","private","public","NA","public","public","public","national","public","NA","NGO","NA","private","NA","NA","NA","public","NA","NGO","private","NGO","public","private","NA","NA","NA","NA","NA","public","public","public","NA","NA","NA","public","NA","NA","NA","NA","NA","public","NA"],["30 minutes","daily","daily","  ","  ","depdends","  ","  ","event driven","  ","  ","  ","  ","  ","  ","  ","montly or yearly","  ","  ","  ","  ","  ","most is yearly","  ","  ","from 30 mn readings","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","most yearly","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","daily","daily","  ","year","  ","  ","  ","  ","  ","most yearly","  ","  ","  ","  ","  ","  ","  "]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th><em>Name<\/em><\/th>\n      <th><em>Short Description<\/em><\/th>\n      <th><em>Data subject<\/em><\/th>\n      <th><em>Formats<\/em><\/th>\n      <th><em>Ready to use formats?<em><\/th>\n      <th><em>Bulk download?<\/em><\/th>\n      <th><em>Length<em><\/th>\n      <th><em>Local<em><\/th>\n      <th><em>Terms<em><\/th>\n      <th><em>Source<em><\/th>\n      <th><em>Time<em><\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p><br />
+</p>
+</div>
+</div>
+<div id="other-resources" class="section level2">
+<h2>Other resources</h2>
+<p><br />
+<div id="htmlwidget-6d9c3d5e58010145b41c" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6d9c3d5e58010145b41c">{"x":{"filter":"none","data":[["<a href=\"http://www.kaggle.com/\">Kaggle<\/a>","<a href=\"http://www.kdnuggets.com/datasets/index.html\">kdnuggets<\/a>","<a href=\"https://darksky.net/dev\">Dark Sky API<\/a>","<a href=\"https://developer.twitter.com/content/developer-twitter/en.html\">Twitter Developer Page<\/a>","<a href=\"http://archive.ics.uci.edu/ml/\">UC Irvine Machine Learning Repository<\/a>","<a href=\"http://usgovxml.com\">US gov xml<\/a>","<a href=\"https://wiki.dbpedia.org/develop/datasets/downloads-2016-10\">Wikipedia<\/a>","<a href=\"http://networkrepository.com\">Network repository<\/a>","<a href=\"https://www.google.com/earth/\">Google Earth<\/a>","<a href=\"https://cloud.google.com/maps-platform/\">Google Maps<\/a>","<a href=\"https://archive.ics.uci.edu/ml/datasets.html\">ML Repository<\/a>","<a href=\"http://aws.amazon.com/datasets\">AWS<\/a>"],["Kaggle datasets","Datasets for Data Mining and Data Science","Weather API on the web","analyse tweets and related","436 data sets as a service to the machine learning community.","US Government Web Services and XML Data Sources","All xml source files of Wikipedia are now hosted alongside the extracted data and can be found in the dataset table as pages-articles dataset.","Network/ML data repository w/ visual interactive analytics","3D models","2D maps","Machine Learning Repository","Registry of Open Data on AWS"],["datasets, ml","datasets, ml","weather","twitter feed","Machine Learning Repository","US data","wikipedia","networks, repos","maps, geo","maps, routes, places","ML","several"],["  ","  ","json","API","  ","  ","CSV and JSON","  ","  ","  ","  ","  "],["  ","  ","yes","yes","  ","  ","  ","  ","  ","yes","  ","  "],["  ","  ","yes","yes","  ","  ","  ","  ","  ","yes","  ","  "],["Wordlwide","Wordlwide","weather","NA","NA","national","NA","NA","Global","Global","Wordlwide","NA"],["Wordlwide","US","worlwide","NA","US","US","worldwide","NA","Wordlwide","Wordlwide","Wordlwide","NA"],["  ","  ","<a href=\"<a href=\"https://darksky.net/dev/docs/terms\">T&C<\/a>","<a href=\"<a href=\"https://twitter.com/en/tos\">T&C<\/a>","  ","  ","  ","  ","  ","<a href=\"<a href=\"https://developers.google.com/maps/terms\">T&C<\/a>","  ","  "],["NA","NA","private","private","NA","public","NA","NA","Private","Private","NA","Private"],["  ","  ","minute by minute","  ","  ","  ","  ","  ","  ","  ","  ","  "]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th><em>Name<\/em><\/th>\n      <th><em>Short Description<\/em><\/th>\n      <th><em>Data subject<\/em><\/th>\n      <th><em>Formats<\/em><\/th>\n      <th><em>Ready to use formats?<em><\/th>\n      <th><em>Bulk download?<\/em><\/th>\n      <th><em>Length<em><\/th>\n      <th><em>Local<em><\/th>\n      <th><em>Terms<em><\/th>\n      <th><em>Source<em><\/th>\n      <th><em>Time<em><\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
